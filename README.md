@@ -18,8 +18,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Solution URL here](https://www.frontendmentor.io/solutions/stats-preview-card-desktop-first-qX2Gj2DRpy)
+- Live Site URL: [Live site URL here](https://altera21.github.io/stats-preview-card-component-main/)
 
 ### Built with
 
