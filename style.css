@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap');
+
+:root{
+    --very-dark-blue: hsl(233, 47%, 7%);
+    --dark-des-blue: hsl(244, 38%, 16%);
+    --soft-violet: hsl(277, 64%, 61%);
+    --main-white: hsla(0, 0%, 100%, 0.75);
+    --stat-white: hsla(0, 0%, 100%, 0.6);
+}
+
+/* UTILITY CLASS */
+
+.flex{
+    display: flex;
+}
+
+.flex.column{
+    flex-direction: column;
+}
+
+.flex.justify-content-center{
+    justify-content: center;
+}
+
+.flex.align-items-center{
+    align-items: center;
+}
+
+.flex.justify-content-space{
+    justify-content: space-between;
+}
+
+.font-inter{
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-variation-settings:"slnt" 0;
+}
+
+.font-lex{
+    font-family: "Lexend Deca", sans-serif;
+}
+
+.size-15{
+    font-size: 15px;
+    margin-bottom: 5rem;
+    color: var(--main-white);
+}
+
+.small{
+    font-size: 0.8rem;
+}
+
+/* UTILITY CLASS END*/
+
+*{
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+body{
+    min-height: 100vh;
+    background-color: var(--very-dark-blue);
+}
+
+.div-desktop, .div-mobile{
+    background-color: rgb(148, 0, 211, 50%);
+    position: absolute;
+}
+
+.div-desktop{
+    width: 30.25rem;
+    height: 100%;
+    right: 0;
+}
+
+.div-mobile{
+    height: 14.73rem;
+    width: 100%;
+    top: 0;
+    display: none;
+}
+
+.mobile-image{
+    display: none;
+    border-radius: 1rem 1rem 0 0;
+}
+
+.desktop-image{
+    border-radius: 0 1rem 1rem 0;
+}
+
+.container{
+    position: relative;
+    width: 60rem;
+    height: 25rem;
+    background-color: var(--dark-des-blue);
+    border-radius: 1rem;
+}
+
+.description{
+    box-sizing: border-box;
+    justify-content: space-around;
+    margin-left: 2rem;
+    padding-block: 2rem;
+    width: 40%;
+    height: 100%;
+}
+
+b{
+    color: var(--soft-violet);
+}
+
+p{
+    color: var(--stat-white);
+}
+
+@media(max-width:755px){
+    .div-desktop{
+        display: none;
+    }
+
+    .div-mobile{
+        display: block;
+    }
+
+    .desktop-image{
+        display: none;
+    }
+
+    .mobile-image{
+        display: block;
+    }
+
+    .container{
+        flex-direction: column;
+        width: 20rem;
+        height: 45rem;
+    }
+
+    .description{
+        align-self: center;
+        text-align: center;
+        margin: 0;
+        width: 90%;
+        height: 80%;
+        margin-bottom: 10rem;
+    }
+
+    .size-15{
+        margin-block: 1rem;
+    }
+
+    .offer{
+        flex-direction: column;
+    }
+
+    .testimony{
+        margin-bottom: 1rem;
+    }
+}
